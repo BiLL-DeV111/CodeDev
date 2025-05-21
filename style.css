@@ -1,0 +1,345 @@
+/*Body backgrounde*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: linear-gradient(to left, white, gray);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.bodycolor {
+  background: linear-gradient(to right, #eaeaea, #ab74f9b3);
+}
+/*Navigasi bar dan header*/
+.navbar {
+  width: 97%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid blue;
+  position: fixed;
+  background: linear-gradient(to right, #eaeaea, #bb8dfc);
+  z-index: 1000;
+  padding: 1vh;
+  box-shadow: 0 2px 10px;
+  border-radius: 1rem;
+}
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #11235f;
+  border: 1px solid blue;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  border: 1px solid blue;
+}
+.nav {
+  font-weight: 400;
+  display: flex;
+  gap: 8vh;
+  border: 1px solid blue;
+}
+.nav a {
+  margin-left: 30px;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-right: 15px;
+  text-decoration: none;
+  border: 1px solid blue;
+}
+/*Container*/
+.judul {
+  animation-delay: 1s;
+  font-weight: 800;
+  font-size: 45px;
+  margin-left: 65px;
+  margin-top: 80px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  border: 1px solid blue;
+}
+.subjudul {
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 70px;
+  border: 1px solid blue;
+}
+.subjudul2 {
+  font-size: 18px;
+  margin-left: 70px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  border: 1px solid blue;
+}
+.subjudul-3 {
+  font-size: 30px;
+  margin-left: 75px;
+  margin-top: 50px;
+  font-weight: 800;
+  border: 1px solid blue;
+}
+.subjudul-4 {
+  font-size: 30px;
+  margin-left: 65px;
+  margin-top: 50px;
+  font-weight: 800;
+  border: 1px solid blue;
+}
+.isi-subjudul {
+  font-size: 18px;
+  margin-left: 75px;
+  margin-top: 80px;
+  max-width: 800px; /* Lebar maksimal kontainer */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  border: 1px solid blue;
+}
+
+/*Style-order*/
+.judul-menu {
+  display: flex; /* Mengaktifkan flexbox */
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+  border: 1px solid blue;
+  margin-left: 75px;
+}
+.judul-order {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 30px;
+  display: flex; /* Mengaktifkan Flexbox */
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center;
+  border: 1px solid blue;
+  margin-top: 100px;
+}
+.judul-order2 {
+  font-weight: 600;
+  font-size: 20px;
+  display: flex; /* Mengaktifkan Flexbox */
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center;
+  border: 1px solid blue;
+  margin-top: 15px;
+}
+
+.subjudul-order {
+  margin-top: 10px;
+  display: flex; /* Mengaktifkan Flexbox */
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center;
+  border: 1px solid blue;
+}
+#hasil-pencarian {
+  margin-top: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  justify-content: center;
+  border: 1px solid blue;
+}
+/*style gambar produk di order*/
+.gallery-wrapper {
+  background-color: #11235f;
+  width: 100%;
+  overflow-x: auto; /* Ini yang membuat bisa di-scroll ke samping */
+  overflow-y: hidden; /* Sembunyikan scrollbar vertikal jika tidak perlu */
+  white-space: nowrap; /* Mencegah gambar turun ke baris baru */
+  background-color: #f0f0f0; /* Warna latar belakang galeri */
+  padding: 15px 0; /* Beri sedikit padding atas dan bawah */
+  -webkit-overflow-scrolling: touch; /* Untuk scroll yang lebih smooth di iOS */
+  background: linear-gradient(to right, #eaeaea, #ab74f9b3);
+}
+
+.image-gallery {
+  display: inline-block; /* Membuat semua item gambar berjajar */
+}
+
+.image-item {
+  display: inline-block; /* Membuat item gambar berjajar */
+  width: 200px; /* Lebar setiap item gambar */
+  margin-right: 15px; /* Jarak antar gambar */
+  background-color: #ffffff; /* Latar belakang untuk setiap item */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: top; /* Agar semua item rata atas */
+  padding-bottom: 10px;
+}
+
+.image-item:first-child {
+  margin-left: 15px; /* Beri jarak di awal galeri */
+}
+
+.image-item:last-child {
+  margin-right: 15px; /* Beri jarak di akhir galeri */
+}
+
+.image-item img {
+  width: 100%;
+  height: 150px; /* Tinggi gambar, sesuaikan */
+  object-fit: cover; /* Agar gambar tidak gepeng */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nama-produk {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  white-space: normal; /* Agar nama produk bisa wrap jika panjang */
+  font-weight: 800;
+}
+
+/* Style untuk scrollbar (opsional, tampilan bisa berbeda di tiap browser) */
+.gallery-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-wrapper::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.gallery-wrapper::-webkit-scrollbar-thumb {
+  background: #ab74f9b3;
+  border-radius: 10px;
+}
+
+.gallery-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*bagian aboute*/
+.judulabout {
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 75px;
+  margin-top: 125px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+  border: 1px solid blue;
+}
+.button-dev {
+  border: transparent;
+  font-family: "Poppins", sans-serif;
+  width: 150px;
+  background-color: #535252;
+  padding: 15px 0px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  margin-top: 15px;
+  border: 1px solid blue;
+  margin-left: 75px;
+}
+.namedev {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  margin-top: 80px;
+  font-weight: 800;
+  border: 1px solid blue;
+  width: 20%;
+  margin-left: 75px;
+}
+
+.detaildev {
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 50px;
+  max-width: 800px; /* Lebar maksimal kontainer */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid blue;
+  margin-left: 75px;
+}
+/*style footer*/
+
+.content {
+  padding: 20px;
+  border: 1px solid blue;
+}
+.teksbutton {
+  color: #eaeaea;
+  text-decoration: none;
+  border: 1px solid blue;
+}
+.button1:hover {
+  background-color: #757575;
+  color: #ffffff;
+  transform: scale(1.03); /* sedikit membesar saat hover */
+  border: 1px solid blue;
+}
+
+footer {
+  background-color: #0b132d; /* Warna latar belakang gelap seperti pada gambar */
+  color: #a9b3c0; /* Warna teks umum */
+  padding: 40px 20px;
+  margin-top: 80px;
+  background-color: rgb(14, 14, 103);
+  border: 1px solid blue;
+}
+.kerakweb {
+  margin-top: 100px;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+#menu-header.show {
+  top: 0; /* Posisi menu terlihat saat scroll ke bawah */
+  border: 1px solid blue;
+}
+
+#menu-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+#menu-header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  border: 1px solid blue;
+}
+
+#menu-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  border: 1px solid blue;
+}
+
+main {
+  padding-top: 80px; /* Memberi ruang agar konten tidak tertutup menu awal (sesuaikan jika tinggi menu berubah) */
+  border: 1px solid blue;
+}

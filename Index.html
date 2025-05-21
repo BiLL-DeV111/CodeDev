@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>www.CodeDev.com</title>
+  </head>
+  <body class="bodycolor">
+    <header class="menu-bar">
+      <div class="navbar">
+        <div class="logo">CodeDev</div>
+        <div class="nav">
+          <a href="Index.html">Home</a>
+          <a href="Projek.html">Order</a>
+          <a href="about.html">Developer</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="deskrisi-body">
+      <div class="judul">Welcome To CodeDev!</div>
+      <div class="subjudul">Menyediakan web Berkualitas dan Terpercaya</div>
+
+      <div class="subjudul-4">Apa itu CodeDev?</div>
+      <div class="subjudul2">
+        CodeDev adalah sekumpulan tim ahli yang berdedikasi untuk menyediakan
+        layanan pembuatan website sederhana yang tidak hanya terjangkau di
+        kantong, tetapi juga berkualitas tinggi dan terpercaya. Kami percaya
+        bahwa setiap bisnis, tanpa terkecuali, berhak memiliki website yang
+        menarik, fungsional, dan mudah dikelola tanpa harus mengeluarkan biaya
+        besar.
+      </div>
+
+      <div class="subjudul-3">Mengapa Memilih CodeDev?</div>
+
+      <div class="isi-subjudul">
+        Sederhana Namun Profesional: Kami fokus pada desain yang bersih,
+        intuitif, dan efektif dalam menyampaikan pesan bisnis Anda. Website yang
+        kami buat mudah dinavigasi oleh pengunjung dan diakses melalui berbagai
+        perangkat.
+      </div>
+
+      <div class="isi-subjudul">
+        Kualitas Terjamin: Meskipun sederhana, kami tidak pernah mengorbankan
+        kualitas. Kami menggunakan teknologi terkini dan praktik terbaik dalam
+        pengembangan web untuk memastikan website Anda berfungsi optimal dan
+        aman.
+      </div>
+
+      <div class="isi-subjudul">
+        Harga Terjangkau: Kami menawarkan paket harga yang transparan dan
+        bersaing, dirancang khusus untuk bisnis yang mengutamakan efisiensi
+        biaya tanpa mengorbankan kualitas. Investasi Anda akan memberikan hasil
+        yang maksimal.
+      </div>
+
+      <div class="subjudul-4">Bagaimana cara memesannya?</div>
+
+      <div class="isi-subjudul">Pemesanan website bisa melalui menu order</div>
+    </div>
+
+    <footer class="kerakweb">
+      <p>&copy; 2025 CodeDev. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const menuBar = document.querySelector(".menu-bar");
+      let lastScrollTop = 0;
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          // Scrolling ke bawah
+          menuBar.classList.add("hidden");
+        } else {
+          // Scrolling ke atas
+          menuBar.classList.remove("hidden");
+        }
+
+        lastScrollTop = scrollTop;
+      });
+    </script>
+  </body>
+</html>

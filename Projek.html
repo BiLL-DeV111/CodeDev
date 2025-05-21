@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>www.CodeDev.com</title>
+  </head>
+  <body class="bodycolor">
+  <div>
+      <header class="menu-bar">
+        <div class="navbar">
+          <div class="logo">CodeDev</div>
+          <div class="nav">
+            <a href="Index.html">Home</a>
+            <a href="Projek.html">Order</a>
+            <a href="about.html">Developer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </header>
+    
+
+    <div class="judul-order">PILIH WEBSITE YANG DIINGINKAN </div>
+    <div class="subjudul-order">Website</div>
+
+ <div class="gallery-wrapper">
+    <div class="image-gallery">
+      <div class="image-item">
+                    <img src="Desain-Produk1.jpg" alt="Produk 1">
+                    <p class="nama-produk">Website Buat Kerja</p>
+                </div>
+                <div class="image-item">
+                    <img src="desain-produk2.jpg" alt="Produk 2">
+                    <p class="nama-produk">Website Untuk Propaganda</p>
+                </div>
+                <div class="image-item">
+                    <img src="Desain-Produk3.jpg" alt="Produk 3">
+                    <p class="nama-produk">Website Untuk Pengusaha Muda</p>
+                </div>
+                <div class="image-item">
+                    <img src="desain-produk4.jpg" alt="Produk 4">
+                    <p class="nama-produk">Website lindungi alam</p>
+                </div>
+                <div class="image-item">
+                    <img src="desain-produk5.jpg" alt="Produk 5">
+                    <p class="nama-produk">Website Pemerintah</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/00FFFF/000000?text=Produk+6" alt="Produk 6">
+                    <p class="nama-produk">Nama Produk 6</p>
+                </div>
+                </div>
+        </div>
+    </div>
+
+<div class="judul-order2">YANG LAINNYA</div>
+
+    <div class="gallery-wrapper">
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/FF0000/FFFFFF?text=Produk+1" alt="Produk 1">
+                    <p class="nama-produk">Nama Produk 1</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/00FF00/FFFFFF?text=Produk+2" alt="Produk 2">
+                    <p class="nama-produk">Nama Produk 2</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/0000FF/FFFFFF?text=Produk+3" alt="Produk 3">
+                    <p class="nama-produk">Nama Produk 3</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/FFFF00/000000?text=Produk+4" alt="Produk 4">
+                    <p class="nama-produk">Nama Produk 4</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/FF00FF/FFFFFF?text=Produk+5" alt="Produk 5">
+                    <p class="nama-produk">Nama Produk 5</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://via.placeholder.com/200x150/00FFFF/000000?text=Produk+6" alt="Produk 6">
+                    <p class="nama-produk">Nama Produk 6</p>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+  <footer class="kerakweb">
+    <p>&copy; 2025 CodeDev. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBar = document.querySelector(".menu-bar");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scrolling ke bawah
+        menuBar.classList.add("hidden");
+      } else {
+        // Scrolling ke atas
+        menuBar.classList.remove("hidden");
+      }
+
+      lastScrollTop = scrollTop;
+    });
+    </script>
+    </body>
+</html>
